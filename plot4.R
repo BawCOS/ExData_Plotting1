@@ -1,5 +1,5 @@
 # Again using code from plot2.R to read in data, subset, and add date/time stamp
-household_power_consumption <- read.csv("./household_power_consumption.txt", sep=";",nrows=100000,na.strings="?")
+household_power_consumption <- read.csv("household_power_consumption.txt", sep=";",nrows=100000,na.strings="?")
 # Now subset
 data<-subset(household_power_consumption,Date=="1/2/2007"|Date=="2/2/2007")
 #Now combine Date and Time into one time variable

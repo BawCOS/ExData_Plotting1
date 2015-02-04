@@ -1,5 +1,5 @@
 # I know from plot1.R to only read in the first 100000 rows
-household_power_consumption <- read.csv("./household_power_consumption.txt", sep=";",nrows=100000,na.strings="?")
+household_power_consumption <- read.csv("household_power_consumption.txt", sep=";",nrows=100000,na.strings="?")
 # Now subset
 data<-subset(household_power_consumption,Date=="1/2/2007"|Date=="2/2/2007")
 # Check the class of each
